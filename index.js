@@ -13,7 +13,7 @@ function handleFetch(url){
         throw new Error(response.statusText);
     })
     .then(responseJson => {
-        console.log( responseJson );
+        displayResults();
     })
     .catch(err => {
         $('.js-error-message').text(`Something went wrong: ${err.message}`);
@@ -24,14 +24,12 @@ function displayResults(responseJson) {
     console.log(responseJson);
     $('.js-error-message').empty();
     $('.results-list').empty();
-    for (let i = 0; i < responseJson.data.length; i++) {
-        $('.results-list').append(`<li><h3>${responseJson.data[i].city}</h3>
-        <p>${responseJson.data[i].current[i].pollution}</p>
-        <p>${responseJson.data[i].current[i].weather}</p>
+        $('.results-list').append(`<li><h3>${responseJson.data.city}</h3>
+        <p>${responseJson.data.current[i].pollution.aqius}</p>
+        <p>${responseJson.data.current[i].weather.tp}</p>
         </li>`);
     }
-    $('.results').removeCLass('hidden');
-}
+    $('.section').removeClass('hidden');
 
 function watchForm() {
     $('.js-form').on('submit', function(event) {
