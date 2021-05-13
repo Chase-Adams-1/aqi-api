@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: lightblue;
+    color: black;
+    justify-content: center;
+}
+
+button, input[type="text"] {
+    padding: 5px;
+    
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.error-message {
+color: blue;
+}
+
+.section {
+    margin-top: 10px;
+}
+
+.results-list {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+.hidden {
+    display: none;
+}
