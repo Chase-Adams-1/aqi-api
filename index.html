@@ -10,19 +10,22 @@
     </head>
     <body>
         <div class="container">
+            <div class="head">
             <a href="index.html"> 
                 <img src="breezy.jpeg" class="center" alt="Breezy">
                 </a>
+                <h3>Find Air Quality Information in Your City</h3>
+                </div>
             <form class="js-form">
                 <label for="search-city">Search City: </label>
-                <input type="text" name="search-term" id="js-search-city" required>
+                <input type="text" name="search-city" id="js-search-city" required>
                 <br>
                 <label for="search-state">Search State by Full Name: </label>
-                <input type="text" spellcheck="true" name="search-term" id="js-search-state" required>
+                <input type="text" spellcheck="true" name="search-state" id="js-search-state" required>
                 <input type="submit" value="Search">
             </form>
             <div class="aqi-key">
-                <h4>AQI KEY</h4>
+                <h4>Air Quality Index KEY</h4>
                 <ul>
                     <li>0-50 : Good</li>
                     <li>51-100 : Moderate</li>
