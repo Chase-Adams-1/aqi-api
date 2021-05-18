@@ -27,8 +27,7 @@ function displayResults(responseJson) {
         <p> Current Air Quality Index: ${responseJson.data.current.pollution.aqius}</p>
         <p> Current Temperature: ${responseJson.data.current.weather.tp} °C</p>
         </li>`);
-    }
-    $('section').removeClass('hidden');
+    };
 
 function watchForm() {
     $('.js-form').on('submit', function(event) {
