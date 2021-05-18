@@ -7,6 +7,7 @@ body {
     color: black;
     justify-content: center;
 }
+
 img {
     max-width: 400px;
     justify-content: center;
@@ -67,8 +68,4 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-}
-
-.hidden {
-    display: none;
 }
